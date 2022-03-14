@@ -10,7 +10,7 @@ from Music.MusicUtilities.tgcallsrun import (music, convert, download, clear, ge
 from Music.MusicUtilities.database.queue import get_active_chats
 from Music.MusicUtilities.database.queue import (get_active_chats, is_active_chat, add_active_chat, remove_active_chat, music_on, is_music_playing, music_off)
 
-@app.on_message(filters.command("restart") & filters.user(SUDOERS))
+@app.on_message(filters.command("crestart") & filters.user(SUDOERS))
 async def theme_func(_, message):
     A = "downloads"
     B = "raw_files"
