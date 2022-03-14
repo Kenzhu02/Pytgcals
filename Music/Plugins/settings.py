@@ -62,7 +62,7 @@ async def settings(_, message: Message):
         )
       )
 
-@app.on_callback_query(filters.regex("settingm"))
+@app.on_callback_query(filters.regex("set"))
 async def settingm(_, CallbackQuery):
     await CallbackQuery.answer("Bot Settings ...")
     buttons = [
