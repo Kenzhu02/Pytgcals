@@ -205,7 +205,7 @@ async def set_var(client, message):
             return await message.reply_text(f"**.env dəyişən əlavə edilməsi:**\n\n`{to_set}` has been added sucsessfully. To restart the bot touch /restart command.")
 
 
-@app.on_message(filters.command("usage") & filters.user(SUDOERS))
+@app.on_message(filters.command("cusage") & filters.user(SUDOERS))
 async def usage_dynos(client, message):
     ### Credits CatUserbot
     if await is_heroku():
@@ -273,7 +273,7 @@ Total Left: `{hours}`**h**  `{minutes}`**m**  [`{percentage}`**%**]"""
     return await dyno.edit(text)
 
 
-@app.on_message(filters.command("update") & filters.user(SUDOERS))
+@app.on_message(filters.command("cupdate") & filters.user(SUDOERS))
 async def update_(client, message):
     if await is_heroku():
         if HEROKU_API_KEY == "" and HEROKU_APP_NAME == "":
