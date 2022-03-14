@@ -43,7 +43,7 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-@app.on_message(filters.command(["alive", "alive@Tg_Vc_00_Bot"]))
+@app.on_message(filters.command(["calive", "calive@Tg_Vc_00_Bot"]))
 async def alive(client, message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
