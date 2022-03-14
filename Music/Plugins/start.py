@@ -58,42 +58,10 @@ pstart_markup = InlineKeyboardMarkup(
 )
 welcome_captcha_group = 2
 
-
-@app.on_message(filters.new_chat_members, group=welcome_captcha_group)
-async def welcome(_, message: Message):
-    chat_id = message.chat.id
-    for member in message.new_chat_members:
-        try:
-            if member.id in OWNER:
-                return await message.reply_text(
-                    f"🦸🏻‍♂️ **Owners Bot [{member.mention}] Has Joined Your Chats.**"
-                )
-            if member.id in SUDOERS:
-                return await message.reply_text(
-                    f"**🉐 Admin Bot [{member.mention}] Just Joined Your Chats.**"
-                )
-            if member.id == ASSID:
-                await remove_active_chat(chat_id)
-            if member.id == BOT_ID:
-                out = start_pannel()
-                await message.reply_text(
-                    f"""
-👋 **Hi, Thanks For Adding Me To The Group**
-
-🛵 **Don't Forget To Make Me Admin So Music Can Run Normally**
-""",
-                    reply_markup=InlineKeyboardMarkup(out[1]),
-                    disable_web_page_preview=True
-                )
-                return
-        except BaseException:
-            return
-
-
 @Client.on_message(
     filters.group
     & filters.command(
-        ["start", "help", f"start@{BOT_USERNAME}", f"help@{BOT_USERNAME}"]
+        ["cstart", "chelp", f"cstart@{BOT_USERNAME}", f"help@{BOT_USERNAME}"]
     )
 )
 async def start(_, message: Message):
@@ -110,7 +78,7 @@ async def start(_, message: Message):
     return
 
 
-@Client.on_message(filters.private & filters.incoming & filters.command("start"))
+@Client.on_message(filters.private & filters.incoming & filters.command("cstart"))
 async def play(_, message: Message):
     if len(message.command) == 1:
         user_id = message.from_user.id
