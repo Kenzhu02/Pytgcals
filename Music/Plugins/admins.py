@@ -77,7 +77,7 @@ async def pause_cmd(_, message):
         return await message.reply_text("I dont think if something's playing on voice chat")   
     await music_off(chat_id)
     await music.pytgcalls.pause_stream(chat_id)
-    await message.reply_text(f"**🚀 Voicechat Paused By {checking}!**")
+    await message.reply_text(f"𝗬𝗨𝗡𝗔 Music telah di Jeda ⏸️\n**Admin :** {checking}!")
     
 @app.on_message(filters.command("resume"))
 async def stop_cmd(_, message): 
@@ -96,7 +96,7 @@ async def stop_cmd(_, message):
     else:
         await music_on(chat_id)
         await music.pytgcalls.resume_stream(chat_id)
-        await message.reply_text(f"**🚀 Voicechat Resumed By {checking}!**")
+        await message.reply_text(f"𝗬𝗨𝗡𝗔 Music telah di Lanjutkan ⏯️\n**Admin :** {checking}!")
 
 @app.on_message(filters.command(["stop", "end"]))
 async def stop_cmd(_, message): 
@@ -115,9 +115,9 @@ async def stop_cmd(_, message):
             pass                        
         await remove_active_chat(chat_id)
         await music.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text(f"**🚀 Voicechat End/Stopped By {checking}!**") 
+        await message.reply_text(f"𝗬𝗨𝗡𝗔 Music telah di hentikan ⏹️\n**Admin :** {checking}!") 
     else:
-        return await message.reply_text("**🤷🏻‍♂ I Dont Think If Something Playing On Voice Chat Bro**")
+        return await message.reply_text("🤷🏻‍♂ woy {cheking}! Apa yang harus saya stop bodoh.")
     
 @app.on_message(filters.command("skip"))
 async def stop_cmd(_, message): 
