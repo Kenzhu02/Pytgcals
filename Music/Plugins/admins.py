@@ -217,7 +217,7 @@ async def stop_cmd(_, message):
                 await message.reply_photo(
                 photo= thumb,
                 reply_markup=InlineKeyboardMarkup(buttons),    
-                caption=(f"<b>Ganti lagu ges</b>\n\n🔈 <b>🏷️ Judul : </b>[{title[:25]}]({url}) \n⏰ <b>Durasi :</b> {duration} Mins\n👩‍💻 **Atas permintaan :** {semx.mention}")
+                caption=(f"<b>Ganti lagu ges</b>\n\n<b>🏷️ Judul : </b>[{title[:25]}]({url}) \n⏰ <b>Durasi :</b> {duration} Mins\n👩‍💻 **Atas permintaan :** {semx.mention}")
             )   
                 os.remove(thumb)
             else:      
@@ -247,6 +247,6 @@ async def stop_cmd(_, message):
                 await message.reply_photo(
                 photo=f"downloads/{_chat_}final.png",
                 reply_markup=InlineKeyboardMarkup(buttons),
-                caption=f"<b>Ganti lagu ges</b>\n\n🔈 <b>🏷️ Judul :</b> {title} \n⏰ <b>Durasi :</b> {duration} \n👩‍💻 <b>Atas permintaan :</b> {username}",
+                caption=f"<b>Ganti lagu ges</b>\n\n<b>🏷️ Judul :</b> {title} \n⏰ <b>Durasi :</b> {duration} \n👩‍💻 <b>Atas permintaan :</b> {username}",
                 )
                 return
