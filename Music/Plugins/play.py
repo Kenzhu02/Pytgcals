@@ -289,7 +289,7 @@ async def play(_, message: Message):
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await message.reply_photo(
             photo=thumb, 
-            caption=(f"1️⃣<b>{title1[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/triplenineee)</u>\n\n2️⃣<b>{title2[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/TripleNineee)</u>\n\n3️⃣<b>{title3[:25]}</b>\n┣♨️ {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/triplenineee)</u>\n\n4️⃣<b>{title4[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/triplenineee)</u>\n\n5️⃣<b>{title5[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/triplenineee)__</u>",    
+            caption=(f"1️⃣<b>{title1[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/triplenineee)</u>\n\n2️⃣<b>{title2[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/TripleNineee)</u>\n\n3️⃣<b>{title3[:25]}</b>\n┣♨️ {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/triplenineee)</u>\n\n4️⃣<b>{title4[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/triplenineee)</u>\n\n5️⃣<b>{title5[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/triplenineee)</u>"),    
             reply_markup=InlineKeyboardMarkup(buttons),
         )  
         disable_web_page_preview=True
