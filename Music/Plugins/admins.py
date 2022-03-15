@@ -117,7 +117,7 @@ async def stop_cmd(_, message):
         await music.pytgcalls.leave_group_call(chat_id)
         await message.reply_text(f"𝗬𝗨𝗡𝗔 Music telah di hentikan ⏹️\n**Admin :** {checking}!") 
     else:
-        return await message.reply_text("🤷🏻‍♂ woy {cheking}! Apa yang harus saya stop bodoh.")
+        return await message.reply_text("🤷🏻‍♂ woy {checking}! Apa yang harus saya stop bodoh.")
     
 @app.on_message(filters.command("skip"))
 async def stop_cmd(_, message): 
