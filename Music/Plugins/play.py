@@ -551,7 +551,7 @@ async def popat(_,CallbackQuery):
     if i == 1:
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
-            f"6️⃣<b>{title6[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/Triplenineee</u>\n\n7️⃣<b>{title7[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/TripleNineee)</u>\n\n8️⃣<b>{title8[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/Triplenineee)</u>\n\n9️⃣<b>{title9[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/TripleNineee)</u>\n\n🔟<b>{title10[:25]}</b>\n┣👩‍💻 {BOT_NAME}\n┗♨️ <u>[Informasi](https://t.me/Triplenineee)</u>",    
+            f"6️⃣<b>{title6[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/Triplenineee)</u>\n\n7️⃣<b>{title7[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/TripleNineee)</u>\n\n8️⃣<b>{title8[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/Triplenineee)</u>\n\n9️⃣<b>{title9[:25]}</b>\n┣👩‍💻 {BOT_NAME} Official\n┗♨️ <u>[Informasi](https://t.me/TripleNineee)</u>\n\n🔟<b>{title10[:25]}</b>\n┣👩‍💻 {BOT_NAME}\n┗♨️ <u>[Informasi](https://t.me/Triplenineee)</u>",    
             reply_markup=InlineKeyboardMarkup(buttons),
         )  
         disable_web_page_preview=True
