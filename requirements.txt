@@ -4,7 +4,7 @@ asyncio
 ffmpeg-python
 pillow
 Pyrogram==1.4.16
-Pt-Pt-tgcalls==0.9.0b1
+Pt-tgcalls==0.9.0b1
 pytube
 wget
 python-dotenv
